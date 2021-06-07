@@ -1,0 +1,195 @@
+<div style="position: absolute;
+top: 50%;
+left: 50%;
+-moz-transform: translateX(-50%) translateY(-50%);
+-webkit-transform: translateX(-50%) translateY(-50%);
+transform: translateX(-50%) translateY(-50%);">
+	<button style="width: 300px; height: 200px; border: 1px solid; font-family: Arial, Helvetica, sans-serif; background-image: url(assets/img/login.jpg);"  *ngIf="!user" (click)="login()"></button>
+</div>
+
+
+
+<html *ngIf="user">
+	<head>
+		<title></title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon">	
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		
+		<link rel="stylesheet" href="assets/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+	</head>
+	<style> 
+		
+
+		.btn-one {
+	color: #FFF;
+	transition: all 0.3s;
+	position: relative;
+}
+.btn-one span {
+	transition: all 0.3s;
+}
+.btn-one::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	transition: all 0.3s;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: rgba(14, 78, 101, 0.5);
+	border-bottom-color: rgba(69, 42, 138, 0.5);
+	transform: scale(0.1, 1);
+}
+.btn-one:hover span {
+	letter-spacing: 2px;
+}
+.btn-one:hover::before {
+	opacity: 1;	
+	transform: scale(1, 1);	
+}
+.btn-one::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: all 0.3s;
+	background-color: rgba(255,255,255,0.1);
+}
+.btn-one:hover::after {
+	opacity: 0;	
+	transform: scale(0.1, 1);
+}
+		</style>
+		<!-- customizable snowflake styling -->
+	<body>
+			
+			<!-- Logo-->
+		<div class="tutu">			
+			<a href="#" class="logo">
+				<img  src="assets/images/logo.png" alt="logo">
+				
+			</a>
+		</div>
+		<!--Ending Logo-->	
+
+		<!-- Main Poster-->
+		<div  class="main-headingg">			
+			<div class="main-header-button">
+				
+			</div>
+		</div> 
+		<!-- Ending Main Poster-->	
+
+		<!-- Logout-->	
+		<div>
+			<button class="btn-one"  *ngIf="user" (click)="logout()"></button>
+		</div>
+		<!-- Ending Logout-->
+		
+		<!-- Title-->	
+		<div>
+			<h1 class="movie-list-title">NEW RELEASES</h1>
+		</div>
+		<!--Ending Title-->
+		
+		
+		<!-- Main -->
+			<div id="main" >
+				<div class="inner">
+					<div class="columns">
+						
+
+						<!-- Column 1 (horizontal, vertical, horizontal, vertical) -->
+							<div class="image fit">
+								<a href=""><img src="assets/films/bluemiracle/7.jpg" alt="" /></a>
+								<div class="bottom-left">Blue Miracle (2021)</div>
+								<a href="assets/films/bluemiracle/Blue Miracle (2021) [720p] [WEBRip] [YTS.MX].torrent" download=""><button class="btn" style="width:50%"><i class="fa fa-download"></i> Download</button></a>
+							</div>
+							<div class="image fit">
+								<a href=""><img src="assets/films/conjuring/3.jpg" alt="" /></a>
+								<div class="bottom-left">The Conjuring (2021)</div>
+								<a href="assets/films/bluemiracle/The Conjuring The Devil Made Me Do It (2021) [720p] [WEBRip] [YTS.MX].torrent" download=""><button class="btn" style="width:50%"><i class="fa fa-download"></i> Download</button></a>
+							</div>
+							<div class="image fit">
+								<a href=""><img src="assets/films/cruella/2.jpg" alt="" /></a>
+								<div class="bottom-left">Cruella (2021)</div>
+								<a href="assets/films/cruella/Cruella (2021) [720p] [WEBRip] [YTS.MX].torrent" download=""><button class="btn" style="width:50%"><i class="fa fa-download"></i> Download</button></a>
+							</div>
+							<div class="image fit">
+								<a href=""><img src="assets/films/godzilla/5.jpg" alt="" /></a>
+								<div class="bottom-left">Godzilla vs. Kong (2021)</div>
+								<a href="assets/films/godzilla/Godzilla vs. Kong (2021) [720p] [BluRay] [YTS.MX].torrent" download=""><button class="btn" style="width:50%"><i class="fa fa-download"></i> Download</button></a>
+							</div>
+							<!--Ending Column 1 (horizontal, vertical, horizontal, vertical) -->
+							
+							<!-- Column 2 (horizontal, vertical, horizontal, vertical) -->
+							<div class="image fit">
+								<a href=""><img src="assets/films/monster/8.jpg" alt="" /></a>
+								<div class="bottom-left">Monster Pets A Hotel Transylvania (2021)</div>
+								<a href="assets/films/monster/Monster Pets A Hotel Transylvania (2021) [720p] [WEBRip] [YTS.MX].torrent" download=""><button class="btn" style="width:50%"><i class="fa fa-download"></i> Download</button></a>
+							</div>
+							<div class="image fit">
+								<a href=""><img src="assets/films/spiral/1.jpg" alt="" /></a>
+								<div class="bottom-left">Spiral (2021)</div>
+								<a href="assets/films/spiral/Spiral (2021) [720p] [WEBRip] [YTS.MX].torrent" download=""><button class="btn" style="width:50%"><i class="fa fa-download"></i> Download</button></a>
+							</div>
+							<div class="image fit">
+								<a href=""><img src="assets/films/thosewhowishmedead/4.jpg" alt="" /></a>
+								<div class="bottom-left">Those Who Wish Me Dead (2021)</div>
+								<a href="assets/films/thosewhowishmedead/Those Who Wish Me Dead (2021) [720p] [WEBRip] [YTS.MX].torrent" download=""><button class="btn" style="width:50%"><i class="fa fa-download"></i> Download</button></a>
+							</div>
+							<div class="image fit">
+								<a href=""><img src="assets/films/wrathofman/6.jpg" alt="" /></a>
+								<div class="bottom-left">Wrath of Man (2021)</div>
+								<a href="assets/films/wrathofman/Wrath of Man (2021) [720p] [WEBRip] [YTS.MX].torrent" download=""><button class="btn" style="width:50%"><i class="fa fa-download"></i> Download</button></a>
+							</div>
+							<!--Ending Column 2 (horizontal, vertical, horizontal, vertical) -->
+
+					</div>
+				</div>
+			</div>
+
+			<!-- Title-->	
+			<div>
+				<h1 class="movie-list-title">TV SERIES (The Witcher S01)</h1>
+			</div>
+			<!--Ending Title-->
+
+			<div>
+				<a href="https://dl3.3rver.org/hex1/Series/The.Witcher/S01/" target="_blank"><button class="btn-tv" style="width:30%"><i class="fa fa-download"></i> Download</button></a>
+			</div>
+
+			<!-- Main Poster-->
+			<div  class="main-headinggTwo">			
+				<div class="main-header-button">
+					
+				</div>
+			</div> 
+			<!-- Ending Main Poster-->	
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
